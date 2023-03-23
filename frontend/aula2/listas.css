@@ -1,0 +1,9 @@
+ol{
+  list-style-type: lower-greek;
+  list-style-position: inside;
+}
+
+ul{
+  list-style-type: square;
+  list-style-image: url(https://enemaneiras.com.br/wp-content/uploads/2021/09/imagem-png-com-transparencia.png);
+}

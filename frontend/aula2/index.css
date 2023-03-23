@@ -1,0 +1,24 @@
+div{
+  color: blue;
+}
+
+p{
+  color: blueviolet;
+}
+
+#p-anterior {
+  color: gray;
+}
+
+.grande{
+  font-size: 30px;
+  color: pink;
+}
+
+.p{
+  color: red;
+}
+
+#p{
+  color: green;
+}

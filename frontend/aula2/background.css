@@ -1,0 +1,18 @@
+body{
+  height: 200vh;
+  /* background-color: red; */
+  /* background-color: rgb(125,125,125); */
+  background-color: #1f323d;
+  background-image: url(https://enemaneiras.com.br/wp-content/uploads/2021/09/imagem-png-com-transparencia.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* background-size: contain; */
+  background-size: cover;
+
+  background: #1f323d url(https://enemaneiras.com.br/wp-content/uploads/2021/09/imagem-png-com-transparencia.png) no-repeat fixed center;
+}
+
+div{
+  background-color: white;
+}
