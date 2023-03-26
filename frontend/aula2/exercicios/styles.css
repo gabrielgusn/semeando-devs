@@ -1,0 +1,54 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo-principal{
+  color: yellow;
+}
+
+table{
+  border-collapse: collapse;
+  color: white;
+  text-align: center;
+}
+
+input{
+  border-radius: 8px;
+  height: 2lh;
+}
+
+.radio-ou-checkbox{
+  display: flex;
+  align-items:center;
+  text-align: center;
+  gap: 4px;
+  font-weight: bold;
+}
+
+textarea{
+  border-radius: 8px;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+
+button{
+  border-radius: 16px;
+  height: 2lh;
+  font-weight: bolder;
+  color: white;
+  border-width: 1px;
+  width: 60px;
+}
+
+#button-enviar{
+  background-color: green;
+}
+
+#button-limpar{
+  background-color: blue;
+}
