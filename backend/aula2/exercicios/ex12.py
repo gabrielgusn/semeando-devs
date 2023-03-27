@@ -1,5 +1,6 @@
 valor_compra = float(input("Insira o valor da compra: "))
 cupom = input("Insira o Cupom de Desconto: ")
+cupom = cupom.upper()
 
 if(cupom == "APP5"):
     print(f"O preço com desconto é R$ {valor_compra-(valor_compra*0.05)}")
