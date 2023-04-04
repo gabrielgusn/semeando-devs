@@ -52,3 +52,7 @@ button{
 #button-limpar{
   background-color: blue;
 }
+
+textarea {
+  resize: none;
+}

@@ -1,0 +1,131 @@
+:root{
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --default-font: 'Kumbh Sans', sans-serif;
+}
+
+*{
+  font-family: var(--default-font);
+}
+
+body{
+  background-color: var(--dark-cyan);
+}
+
+#circulo-topo{
+  position: fixed;
+  background-image: url(./images/bg-pattern-top.svg);
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-position: 0 -250px;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#circulo-fundo{
+  position: fixed;
+  background-image: url(images/bg-pattern-bottom.svg);
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-position: 0 250px;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.card{
+  width: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 80px 10px #3f3f3f8f;
+}
+
+.attribution{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  color: white;
+}
+
+#imagem-cabecalho{
+  width: 500px;
+  height: 200px;
+  background-image: url(images/bg-pattern-card.svg);
+  background-size: cover;
+}
+
+#avatar{
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  border: 3px solid white;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+
+#avatar img{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+#info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+.nome{
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+.idade, .cidade {
+  color: var(--dark-gray);
+}
+
+#footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer div{
+  text-align: center;
+  padding: 15px 0;
+}
+
+#footer div span{
+  display: block;
+}
+
+#footer div span:first-child{
+  font-weight: bold;
+}
+
+#footer div span:last-child{
+  color: var(--dark-gray);
+}

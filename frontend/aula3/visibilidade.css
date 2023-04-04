@@ -1,0 +1,12 @@
+div{
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  background-color: yellow;
+}
+
+#div1{
+  /* visibility: hidden; */
+  /* display: none; */
+  opacity: 0.3;
+}

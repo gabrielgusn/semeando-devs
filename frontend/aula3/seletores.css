@@ -1,0 +1,37 @@
+span{
+  color: red;
+}
+
+p.p{
+  color: green;
+}
+
+div#div{
+  color: blue;
+}
+
+span, div{
+  text-decoration: underline;
+}
+
+body div span{
+  color:blueviolet;
+}
+
+div > span {
+  color: blue !important;
+}
+
+div + label {
+  background-color: red;
+}
+
+div ~ label{
+  font-style: italic;
+}
+
+input[type='text']{
+  color: red;
+}
+
+

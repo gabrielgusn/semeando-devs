@@ -1,0 +1,48 @@
+/*p{
+  position: static;
+}
+
+div{
+  position: relative;
+  top: 15px;
+  left: 200px;
+} */
+
+div{
+  width: 200px;
+  height: 200px;
+}
+
+#vermelha{
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* z-index: 3; */
+  /* opacity: 50%; */
+}
+
+#amarela { 
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* right: 0px; */
+  /* bottom: 0px; */
+  z-index: 2;
+  opacity: 50%;
+}
+
+#conteudo {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: green;
+}
+
+p{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}

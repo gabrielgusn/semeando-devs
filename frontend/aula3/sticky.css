@@ -1,0 +1,12 @@
+body{
+  height: 3000px;
+}
+
+img{
+  height: 80vh;
+}
+
+div{
+  position: sticky;
+  top: 20px;
+}

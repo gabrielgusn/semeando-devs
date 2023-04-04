@@ -1,0 +1,9 @@
+img{
+  float: left;
+  margin: 20px;
+}
+
+p{
+  clear: both;
+  text-align: justify;
+}
