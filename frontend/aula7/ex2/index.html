@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculadora de IMC</h1>
+  <form>
+    <label for="altura">Digite sua altura em metros:</label>
+    <input type="number" step="0.01" id="altura" name="altura" min="0" max="3" required>
+    <label for="peso">Digite seu peso em quilos:</label>
+    <input type="number" id="peso" name="peso" min="-2" max="300" required>
+    <button type="button" onclick="calcularIMC()">Calcular</button>
+  </form>
+  <div id="resultado"></div>
+
+  <script>
+    function calcularIMC() {
+      const altura = parseFloat(document.getElementById('altura').value);
+      const peso = parseFloat(document.getElementById('peso').value);
+      const resultadoElement = document.getElementById('resultado');
+
+      if (isNaN(altura) || altura < 0 || altura > 3 || isNaN(peso) || peso < 0 || peso > 300) {
+        resultadoElement.innerHTML = "Erro: altura ou peso inválido";
+        resultadoElement.classList.add('erro');
+      } else {
+        const imc = peso / (altura ** 2);
+        resultadoElement.innerHTML = `Seu IMC é ${imc.toFixed(2)}`;
+        resultadoElement.classList.remove('erro');
+      }
+    }
+  </script>
+</body>
+</html>

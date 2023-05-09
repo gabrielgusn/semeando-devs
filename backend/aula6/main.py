@@ -1,18 +1,18 @@
-import utils as validacoes
+# import utils as validacoes
 
-from utils import validacoes
+# from utils import validacoes
+
+import utils
 
 texto = 'Olá, eu tenho 20 anos!'
-numeros = validacoes.extrai_numeros(texto)
+numeros = utils.extrai_numeros(texto)
 print(numeros) 
 
 cep = '12345-678'
-if validacoes.cep_valido(cep):
+if utils.cep_valido(cep):
     print(f'O CEP {cep} é válido.')
 else:
     print(f'O CEP {cep} é inválido.')
-
-  
 
 cpfs = [
     '12345678900',    # CPF inválido
@@ -24,13 +24,13 @@ cpfs = [
 ]
 
 for cpf in cpfs:
-    if validacoes.valida_cpf(cpf):
+    if utils.valida_cpf(cpf):
         print(f'O CPF {cpf} é válido.')
     else:
         print(f'O CPF {cpf} é inválido.')
 
 cnpj = '12.345.678/0001-01'
-if validacoes.valida_cnpj(cnpj):
+if utils.valida_cnpj(cnpj):
     print(f'CNPJ {cnpj} válido')
 else:
     print(f'CNPJ {cnpj} inválido')
@@ -38,12 +38,12 @@ else:
 
 data = "20/04/2020"
 
-validacoes.confere_data(data)
+utils.confere_data(data)
 
 uf = 'SP'
-if validacoes.valida_uf(uf):
+if utils.valida_uf(uf):
     print(f'UF {uf} válida')
-    estado = validacoes.estado_por_uf(uf)
+    estado = utils.estado_por_uf(uf)
     print(estado)
 else:
     print(f'UF {uf} inválida')
