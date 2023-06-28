@@ -1,0 +1,1 @@
+const retornaPalavraEhPalindromoOuNao = (palavra) => { return (palavra.split("").reverse().join("")) === palavra }

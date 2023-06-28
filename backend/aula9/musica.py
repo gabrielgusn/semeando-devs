@@ -1,0 +1,1 @@
+playlist.adicionar_musica('Pneumonoultramicroscopicsilicovolcanoconiosis', 'XAVLEGBMAOFFFASSSSITIMIWOAMNDUTROABCWAPWAEIIPPOHFFFX')
